@@ -1,0 +1,467 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* common */
+html {
+  font-family: Open Sans Medium !important;
+  scroll-behavior: smooth;
+}
+
+.clear {
+  clear: both;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both !important;
+}
+
+.col {
+  float: left;
+  padding: 0 8px;
+}
+
+.col-third {
+  width: calc(100% / 3);
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+/* Main */
+#wrapper {
+}
+
+#header {
+  min-height: 46px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+#nav li a {
+  color: #fff;
+  padding: 0 24px;
+  line-height: 46px;
+  text-decoration: none;
+  display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+  color: black;
+  background-color: #ccc;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav,
+.subnav {
+  list-style-type: none;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav .subnav a {
+  color: black;
+  font-size: 15px;
+  padding: 0 16px;
+  line-height: 38px;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav .ti-down-icon {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#header .ti-search-icon {
+  float: right;
+  color: white;
+  line-height: 46px;
+}
+
+#header .ti-search {
+  padding: 0 24px;
+  font-weight: bolder;
+}
+
+#header .ti-search-icon:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("../img/slider/slider1.jpg") top center / cover no-repeat;
+}
+
+#slider .text-place {
+  color: white;
+  position: absolute;
+  bottom: 48px;
+  width: 100%;
+  text-align: center;
+}
+
+#slider .text-heading {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+#slider .text-content {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* content */
+#content {
+}
+
+#content .content-section {
+  width: 800px;
+  padding: 64px 0 112px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content .section-heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+#content .section-sub-heading {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 15px;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+#content .text-about {
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+#content .member-list {
+  margin-top: 48px;
+}
+#content .member-name {
+  font-size: 15px;
+}
+
+#content .member-img {
+  width: 154px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+/* Tour dates */
+#content .section-tour {
+  background-color: black;
+}
+
+#content .ticket-list {
+  margin-top: 40px;
+}
+
+.ticket-list li {
+  font-size: 15px;
+  color: #757575;
+  padding: 10px 16px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+  list-style-type: none;
+}
+
+#content .sold-out {
+  color: white;
+  background-color: #f44336;
+  padding: 1px 6px;
+  margin-left: 16px;
+}
+
+#content .quantity {
+  float: right;
+  background-color: black;
+  border-radius: 50%;
+  height: 24px;
+  padding: 0 8px;
+  text-align: center;
+  color: white;
+  line-height: 24px;
+  margin-top: -2px;
+}
+
+/* Places */
+.places-list {
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.place-body {
+  color: black;
+  padding: 16px;
+  font-size: 15px;
+  background-color: white;
+}
+
+.place-heading {
+  font-size: 15px;
+}
+
+.places-img {
+  width: 100%;
+  display: block;
+}
+
+.places-img:hover {
+  opacity: 0.6;
+}
+
+.places-time {
+  color: #757575;
+  margin-top: 15px;
+}
+
+.place-decs {
+  margin-top: 15px;
+  line-height: 1.4;
+}
+
+.place-buy-btn {
+  color: white;
+  margin-top: 15px;
+  padding: 12px 15px;
+  background-color: black;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.place-buy-btn:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+#footer {
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.open {
+  display: flex;
+}
+
+.modal-container {
+  width: 900px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: calc(100% - 32px);
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px;
+  color: white;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+}
+
+.modal-heading-icon {
+  margin-right: 16px;
+}
+
+.modal-header {
+  min-height: 130px;
+  font-size: 30px;
+  color: white;
+  background-color: #009688;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+.modal-label {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 9px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 24px;
+}
+
+.modal-btn {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #009688;
+}
+
+.modal-footer {
+  float: right;
+  margin: 30px 0;
+}
+
+.modal-link {
+  color: #009688;
+}
+
+/* contact */
+.contact-container {
+  margin-top: 48px;
+}
+
+.text-contact {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.text-contact i[class*="ti-"] {
+  margin-right: 16px;
+}
+
+.form-control {
+  font-size: 15px;
+  width: 100%;
+  display: block;
+  padding: 10px 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-btn {
+  margin-top: 8px;
+  float: right;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.form-btn:hover {
+  cursor: pointer;
+  color: black;
+  background-color: #ccc;
+}
+
+/* Map */
+.map-sec img {
+  width: 100%;
+  filter: grayscale(50%);
+}
+
+/* footer */
+
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+
+#footer .icon-social {
+  font-size: 24px;
+  padding: 0 5px;
+}
+
+.copy-right a,
+.socials-list a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.socials-list i:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.copy-right {
+  margin-top: 15px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
